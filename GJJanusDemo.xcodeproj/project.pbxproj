@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6874BF4FC8D135DBD3917205 /* libPods-JanusDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */; };
+		6A01287220A13A6F000D9856 /* track_data.dat in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287120A13A6F000D9856 /* track_data.dat */; };
+		6A01287A20A13B04000D9856 /* bear.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287620A13B01000D9856 /* bear.zip */; };
+		6A01287B20A13B04000D9856 /* hkbs.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287720A13B02000D9856 /* hkbs.zip */; };
+		6A01287C20A13B04000D9856 /* bd.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287820A13B03000D9856 /* bd.zip */; };
+		6A01287D20A13B04000D9856 /* lb.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287920A13B03000D9856 /* lb.zip */; };
+		6A01288B20A14882000D9856 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A01288120A14881000D9856 /* ioapi.c */; };
+		6A01288C20A14882000D9856 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A01288320A14881000D9856 /* mztools.c */; };
+		6A01288D20A14882000D9856 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A01288520A14881000D9856 /* unzip.c */; };
+		6A01288E20A14882000D9856 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A01288720A14881000D9856 /* zip.c */; };
+		6A01288F20A14882000D9856 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A01288A20A14881000D9856 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A1A3B072060DB9E00CCAE98 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1A3B062060DB9E00CCAE98 /* VideoToolbox.framework */; };
+		6A1A3B092060DBB300CCAE98 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1A3B082060DBB300CCAE98 /* libstdc++.tbd */; };
+		6A1A3B0C20610BA700CCAE98 /* VideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1A3B0B20610BA700CCAE98 /* VideoCallViewController.m */; };
+		6A3986F2208DB4FF00C085E6 /* GJJanusResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3986F1208DB4FF00C085E6 /* GJJanusResultModel.m */; };
+		6A67912720736D4A00117D08 /* GJJanusRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67912620736D4A00117D08 /* GJJanusRole.m */; };
+		6A67912A20736DBF00117D08 /* GJJanusListenRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67912920736DBF00117D08 /* GJJanusListenRole.m */; };
+		6A67912D20736DEB00117D08 /* GJJanusPublishRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67912C20736DEB00117D08 /* GJJanusPublishRole.m */; };
+		6A6791302073709300117D08 /* RTCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67912F2073709300117D08 /* RTCFactory.m */; };
+		6A67913620737C2100117D08 /* GJJanusMediaConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A67913520737C2100117D08 /* GJJanusMediaConstraints.m */; };
+		6A6DB4CE20D0B9ED00BC6A18 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6DB4CD20D0B9ED00BC6A18 /* WebRTC.framework */; };
+		6A6DB4CF20D0B9ED00BC6A18 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6DB4CD20D0B9ED00BC6A18 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A894DEC205F8F1900C556C8 /* Janus_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A894DEB205F8F1900C556C8 /* Janus_c.cpp */; };
+		6A894DED205F8F1900C556C8 /* Janus_c.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6A894DEA205F8F1900C556C8 /* Janus_c.hpp */; };
+		6A894DF3205F903900C556C8 /* JanusPlugin_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A894DF1205F903900C556C8 /* JanusPlugin_c.cpp */; };
+		6AA42703205A191B00CB3E63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA42702205A191B00CB3E63 /* AppDelegate.m */; };
+		6AA42706205A191B00CB3E63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA42705205A191B00CB3E63 /* ViewController.m */; };
+		6AA42709205A191B00CB3E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA42707205A191B00CB3E63 /* Main.storyboard */; };
+		6AA4270B205A191B00CB3E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4270A205A191B00CB3E63 /* Assets.xcassets */; };
+		6AA4270E205A191B00CB3E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AA4270C205A191B00CB3E63 /* LaunchScreen.storyboard */; };
+		6AA42711205A191B00CB3E63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA42710205A191B00CB3E63 /* main.m */; };
+		6AA427B0205A19D700CB3E63 /* GJJanusWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427A8205A19D600CB3E63 /* GJJanusWebSocket.m */; };
+		6AA427B1205A19D700CB3E63 /* GJJanus.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427AA205A19D600CB3E63 /* GJJanus.m */; };
+		6AA427B2205A19D700CB3E63 /* GJJanusPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427AD205A19D600CB3E63 /* GJJanusPlugin.m */; };
+		6AA427B3205A19D700CB3E63 /* GJJanusVideoRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427AE205A19D600CB3E63 /* GJJanusVideoRoom.m */; };
+		6AA427B8205A19E000CB3E63 /* Transports.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427B5205A19DF00CB3E63 /* Transports.m */; };
+		6AA427B9205A19E000CB3E63 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA427B7205A19E000CB3E63 /* Tools.m */; };
+		6AA42831205A776000CB3E63 /* libJanus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA4279F205A19BF00CB3E63 /* libJanus.a */; };
+		6AB0ACD120848A00000981DD /* KKRTCDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0ACD020848A00000981DD /* KKRTCDefine.m */; };
+		6AB0AD5A2086DA3D000981DD /* GroupTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0AD592086DA3D000981DD /* GroupTimer.m */; };
+		6AB0AD7A20882BD5000981DD /* KKRTCVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0AD7920882BD5000981DD /* KKRTCVideoCapturer.m */; };
+		6AB0AD8420882CDC000981DD /* libGJImageFilters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB0AD7720882A98000981DD /* libGJImageFilters.a */; };
+		791C368DA05994D9AC9B6C5C /* libPods-Janus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A6B36912069F2CA001FEDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AA426F6205A191B00CB3E63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AA4279E205A19BF00CB3E63;
+			remoteInfo = Janus;
+		};
+		6AB0AD7420882A98000981DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0417FC5E1E5EB0E100D5B5D9;
+			remoteInfo = GJImage;
+		};
+		6AB0AD7620882A98000981DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0417FCBD1E5EC74E00D5B5D9;
+			remoteInfo = GJImageFilters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A25DFE42094570A00B15ADB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A6DB4CF20D0B9ED00BC6A18 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A894DE6205F8F1900C556C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				6A894DED205F8F1900C556C8 /* Janus_c.hpp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA4279D205A19BF00CB3E63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		49184AE9514E6304B6F0B88A /* Pods-Janus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Janus/Pods-Janus.debug.xcconfig"; sourceTree = "<group>"; };
+		4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Janus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A01287120A13A6F000D9856 /* track_data.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = track_data.dat; sourceTree = "<group>"; };
+		6A01287620A13B01000D9856 /* bear.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bear.zip; sourceTree = "<group>"; };
+		6A01287720A13B02000D9856 /* hkbs.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = hkbs.zip; sourceTree = "<group>"; };
+		6A01287820A13B03000D9856 /* bd.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bd.zip; sourceTree = "<group>"; };
+		6A01287920A13B03000D9856 /* lb.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = lb.zip; sourceTree = "<group>"; };
+		6A01288020A14881000D9856 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		6A01288120A14881000D9856 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		6A01288220A14881000D9856 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		6A01288320A14881000D9856 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		6A01288420A14881000D9856 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		6A01288520A14881000D9856 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		6A01288620A14881000D9856 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		6A01288720A14881000D9856 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		6A01288820A14881000D9856 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		6A01288920A14881000D9856 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		6A01288A20A14881000D9856 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		6A1A3B062060DB9E00CCAE98 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		6A1A3B082060DBB300CCAE98 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		6A1A3B0A20610BA700CCAE98 /* VideoCallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCallViewController.h; sourceTree = "<group>"; };
+		6A1A3B0B20610BA700CCAE98 /* VideoCallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCallViewController.m; sourceTree = "<group>"; };
+		6A3986F0208DB4FF00C085E6 /* GJJanusResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusResultModel.h; sourceTree = "<group>"; };
+		6A3986F1208DB4FF00C085E6 /* GJJanusResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusResultModel.m; sourceTree = "<group>"; };
+		6A626C5620CA20DE00AD8DC3 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		6A67912520736D4A00117D08 /* GJJanusRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusRole.h; sourceTree = "<group>"; };
+		6A67912620736D4A00117D08 /* GJJanusRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusRole.m; sourceTree = "<group>"; };
+		6A67912820736DBF00117D08 /* GJJanusListenRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusListenRole.h; sourceTree = "<group>"; };
+		6A67912920736DBF00117D08 /* GJJanusListenRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusListenRole.m; sourceTree = "<group>"; };
+		6A67912B20736DEB00117D08 /* GJJanusPublishRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusPublishRole.h; sourceTree = "<group>"; };
+		6A67912C20736DEB00117D08 /* GJJanusPublishRole.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusPublishRole.m; sourceTree = "<group>"; };
+		6A67912E2073709300117D08 /* RTCFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCFactory.h; sourceTree = "<group>"; };
+		6A67912F2073709300117D08 /* RTCFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCFactory.m; sourceTree = "<group>"; };
+		6A67913420737C2100117D08 /* GJJanusMediaConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusMediaConstraints.h; sourceTree = "<group>"; };
+		6A67913520737C2100117D08 /* GJJanusMediaConstraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusMediaConstraints.m; sourceTree = "<group>"; };
+		6A67913720737D3A00117D08 /* GJJanusMediaConstraints+private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GJJanusMediaConstraints+private.h"; sourceTree = "<group>"; };
+		6A67913820737D3A00117D08 /* GJJanusMediaConstraints+private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GJJanusMediaConstraints+private.m"; sourceTree = "<group>"; };
+		6A6DB4CD20D0B9ED00BC6A18 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		6A894DE8205F8F1900C556C8 /* libJanus++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libJanus++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A894DEA205F8F1900C556C8 /* Janus_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Janus_c.hpp; sourceTree = "<group>"; };
+		6A894DEB205F8F1900C556C8 /* Janus_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Janus_c.cpp; sourceTree = "<group>"; };
+		6A894DF1205F903900C556C8 /* JanusPlugin_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JanusPlugin_c.cpp; sourceTree = "<group>"; };
+		6A894DF2205F903900C556C8 /* JanusPlugin_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JanusPlugin_c.hpp; sourceTree = "<group>"; };
+		6AA426FE205A191B00CB3E63 /* GJJanusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJJanusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA42701205A191B00CB3E63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AA42702205A191B00CB3E63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AA42704205A191B00CB3E63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6AA42705205A191B00CB3E63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AA42708205A191B00CB3E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AA4270A205A191B00CB3E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AA4270D205A191B00CB3E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AA4270F205A191B00CB3E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA42710205A191B00CB3E63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AA4279F205A19BF00CB3E63 /* libJanus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJanus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA427A8205A19D600CB3E63 /* GJJanusWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJanusWebSocket.m; sourceTree = "<group>"; };
+		6AA427A9205A19D600CB3E63 /* GJJanusWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJanusWebSocket.h; sourceTree = "<group>"; };
+		6AA427AA205A19D600CB3E63 /* GJJanus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJanus.m; sourceTree = "<group>"; };
+		6AA427AB205A19D600CB3E63 /* GJJanusPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJanusPlugin.h; sourceTree = "<group>"; };
+		6AA427AC205A19D600CB3E63 /* GJJanus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJanus.h; sourceTree = "<group>"; };
+		6AA427AD205A19D600CB3E63 /* GJJanusPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJanusPlugin.m; sourceTree = "<group>"; };
+		6AA427AE205A19D600CB3E63 /* GJJanusVideoRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJJanusVideoRoom.m; sourceTree = "<group>"; };
+		6AA427AF205A19D700CB3E63 /* GJJanusVideoRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJJanusVideoRoom.h; sourceTree = "<group>"; };
+		6AA427B4205A19DF00CB3E63 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		6AA427B5205A19DF00CB3E63 /* Transports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transports.m; sourceTree = "<group>"; };
+		6AA427B6205A19E000CB3E63 /* Transports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transports.h; sourceTree = "<group>"; };
+		6AA427B7205A19E000CB3E63 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		6AA42803205A588600CB3E63 /* GJJanusHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJJanusHttp.h; sourceTree = "<group>"; };
+		6AA42804205A588600CB3E63 /* GJJanusHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJJanusHttp.m; sourceTree = "<group>"; };
+		6AA42835205A77BA00CB3E63 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA42837205A77C700CB3E63 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA42839205A77D300CB3E63 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB0ACCF20848A00000981DD /* KKRTCDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRTCDefine.h; sourceTree = "<group>"; };
+		6AB0ACD020848A00000981DD /* KKRTCDefine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRTCDefine.m; sourceTree = "<group>"; };
+		6AB0ACD22084987C000981DD /* KKRTCDefine+private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKRTCDefine+private.h"; sourceTree = "<group>"; };
+		6AB0ACD32084987C000981DD /* KKRTCDefine+private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KKRTCDefine+private.m"; sourceTree = "<group>"; };
+		6AB0AD582086DA3D000981DD /* GroupTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupTimer.h; sourceTree = "<group>"; };
+		6AB0AD592086DA3D000981DD /* GroupTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTimer.m; sourceTree = "<group>"; };
+		6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GJImage.xcodeproj; path = ../GJImage/GJImage.xcodeproj; sourceTree = "<group>"; };
+		6AB0AD7820882BD5000981DD /* KKRTCVideoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRTCVideoCapturer.h; sourceTree = "<group>"; };
+		6AB0AD7920882BD5000981DD /* KKRTCVideoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRTCVideoCapturer.m; sourceTree = "<group>"; };
+		6AB0AD8620882E7C000981DD /* GJLiveDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJLiveDefine.h; sourceTree = "<group>"; };
+		6AB0AD8720882F99000981DD /* GJPlatformHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJPlatformHeader.h; sourceTree = "<group>"; };
+		6AB0AD882088374E000981DD /* GJLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GJLog.c; sourceTree = "<group>"; };
+		6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JanusDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A07ACD4E1511E3C3D0D88 /* Pods-Janus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Janus/Pods-Janus.release.xcconfig"; sourceTree = "<group>"; };
+		EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A894DE5205F8F1900C556C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA426FB205A191B00CB3E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1A3B092060DBB300CCAE98 /* libstdc++.tbd in Frameworks */,
+				6A1A3B072060DB9E00CCAE98 /* VideoToolbox.framework in Frameworks */,
+				6AA42831205A776000CB3E63 /* libJanus.a in Frameworks */,
+				6A6DB4CE20D0B9ED00BC6A18 /* WebRTC.framework in Frameworks */,
+				6874BF4FC8D135DBD3917205 /* libPods-JanusDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA4279C205A19BF00CB3E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB0AD8420882CDC000981DD /* libGJImageFilters.a in Frameworks */,
+				791C368DA05994D9AC9B6C5C /* libPods-Janus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043B9D1C999986986997A624 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49184AE9514E6304B6F0B88A /* Pods-Janus.debug.xcconfig */,
+				7E2A07ACD4E1511E3C3D0D88 /* Pods-Janus.release.xcconfig */,
+				4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */,
+				EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49C6F4CF60DA59BBBE1EE815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A626C5620CA20DE00AD8DC3 /* WebRTC.framework */,
+				6A1A3B082060DBB300CCAE98 /* libstdc++.tbd */,
+				6A1A3B062060DB9E00CCAE98 /* VideoToolbox.framework */,
+				6AA42839205A77D300CB3E63 /* libSocketRocket.a */,
+				6AA42837205A77C700CB3E63 /* libAFNetworking.a */,
+				6AA42835205A77BA00CB3E63 /* libAFNetworking.a */,
+				4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */,
+				6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A01287E20A14881000D9856 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				6A01287F20A14881000D9856 /* minizip */,
+				6A01288920A14881000D9856 /* ZipArchive.h */,
+				6A01288A20A14881000D9856 /* ZipArchive.m */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		6A01287F20A14881000D9856 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				6A01288020A14881000D9856 /* crypt.h */,
+				6A01288120A14881000D9856 /* ioapi.c */,
+				6A01288220A14881000D9856 /* ioapi.h */,
+				6A01288320A14881000D9856 /* mztools.c */,
+				6A01288420A14881000D9856 /* mztools.h */,
+				6A01288520A14881000D9856 /* unzip.c */,
+				6A01288620A14881000D9856 /* unzip.h */,
+				6A01288720A14881000D9856 /* zip.c */,
+				6A01288820A14881000D9856 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		6A894DE9205F8F1900C556C8 /* Janus++ */ = {
+			isa = PBXGroup;
+			children = (
+				6A894DEA205F8F1900C556C8 /* Janus_c.hpp */,
+				6A894DEB205F8F1900C556C8 /* Janus_c.cpp */,
+				6A894DF1205F903900C556C8 /* JanusPlugin_c.cpp */,
+				6A894DF2205F903900C556C8 /* JanusPlugin_c.hpp */,
+			);
+			path = "Janus++";
+			sourceTree = "<group>";
+		};
+		6AA426F5205A191B00CB3E63 = {
+			isa = PBXGroup;
+			children = (
+				6A6DB4CD20D0B9ED00BC6A18 /* WebRTC.framework */,
+				6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */,
+				6AA42700205A191B00CB3E63 /* JanusDemo */,
+				6AA427A0205A19BF00CB3E63 /* Janus */,
+				6A894DE9205F8F1900C556C8 /* Janus++ */,
+				6AA426FF205A191B00CB3E63 /* Products */,
+				043B9D1C999986986997A624 /* Pods */,
+				49C6F4CF60DA59BBBE1EE815 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AA426FF205A191B00CB3E63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AA426FE205A191B00CB3E63 /* GJJanusDemo.app */,
+				6AA4279F205A19BF00CB3E63 /* libJanus.a */,
+				6A894DE8205F8F1900C556C8 /* libJanus++.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AA42700205A191B00CB3E63 /* JanusDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6A01287E20A14881000D9856 /* ZipArchive */,
+				6A01287820A13B03000D9856 /* bd.zip */,
+				6A01287620A13B01000D9856 /* bear.zip */,
+				6A01287720A13B02000D9856 /* hkbs.zip */,
+				6A01287920A13B03000D9856 /* lb.zip */,
+				6AA42701205A191B00CB3E63 /* AppDelegate.h */,
+				6AA42702205A191B00CB3E63 /* AppDelegate.m */,
+				6A01287120A13A6F000D9856 /* track_data.dat */,
+				6A1A3B0A20610BA700CCAE98 /* VideoCallViewController.h */,
+				6A1A3B0B20610BA700CCAE98 /* VideoCallViewController.m */,
+				6AA42704205A191B00CB3E63 /* ViewController.h */,
+				6AA42705205A191B00CB3E63 /* ViewController.m */,
+				6AA42707205A191B00CB3E63 /* Main.storyboard */,
+				6AA4270A205A191B00CB3E63 /* Assets.xcassets */,
+				6AA4270C205A191B00CB3E63 /* LaunchScreen.storyboard */,
+				6AA4270F205A191B00CB3E63 /* Info.plist */,
+				6AA42710205A191B00CB3E63 /* main.m */,
+			);
+			path = JanusDemo;
+			sourceTree = "<group>";
+		};
+		6AA427A0205A19BF00CB3E63 /* Janus */ = {
+			isa = PBXGroup;
+			children = (
+				6AB0AD8520882E5E000981DD /* GJCategory */,
+				6AB0ACD22084987C000981DD /* KKRTCDefine+private.h */,
+				6AB0ACD32084987C000981DD /* KKRTCDefine+private.m */,
+				6AB0ACCF20848A00000981DD /* KKRTCDefine.h */,
+				6AB0ACD020848A00000981DD /* KKRTCDefine.m */,
+				6AA427AC205A19D600CB3E63 /* GJJanus.h */,
+				6AA427AA205A19D600CB3E63 /* GJJanus.m */,
+				6A3986F0208DB4FF00C085E6 /* GJJanusResultModel.h */,
+				6A3986F1208DB4FF00C085E6 /* GJJanusResultModel.m */,
+				6AB0AD7820882BD5000981DD /* KKRTCVideoCapturer.h */,
+				6AB0AD7920882BD5000981DD /* KKRTCVideoCapturer.m */,
+				6AB0AD582086DA3D000981DD /* GroupTimer.h */,
+				6AB0AD592086DA3D000981DD /* GroupTimer.m */,
+				6AA42803205A588600CB3E63 /* GJJanusHttp.h */,
+				6AA42804205A588600CB3E63 /* GJJanusHttp.m */,
+				6AA427AB205A19D600CB3E63 /* GJJanusPlugin.h */,
+				6AA427AD205A19D600CB3E63 /* GJJanusPlugin.m */,
+				6AA427AF205A19D700CB3E63 /* GJJanusVideoRoom.h */,
+				6AA427AE205A19D600CB3E63 /* GJJanusVideoRoom.m */,
+				6A67913420737C2100117D08 /* GJJanusMediaConstraints.h */,
+				6A67913520737C2100117D08 /* GJJanusMediaConstraints.m */,
+				6A67913720737D3A00117D08 /* GJJanusMediaConstraints+private.h */,
+				6A67913820737D3A00117D08 /* GJJanusMediaConstraints+private.m */,
+				6A67912E2073709300117D08 /* RTCFactory.h */,
+				6A67912F2073709300117D08 /* RTCFactory.m */,
+				6A67912520736D4A00117D08 /* GJJanusRole.h */,
+				6A67912620736D4A00117D08 /* GJJanusRole.m */,
+				6A67912820736DBF00117D08 /* GJJanusListenRole.h */,
+				6A67912920736DBF00117D08 /* GJJanusListenRole.m */,
+				6A67912B20736DEB00117D08 /* GJJanusPublishRole.h */,
+				6A67912C20736DEB00117D08 /* GJJanusPublishRole.m */,
+				6AA427A9205A19D600CB3E63 /* GJJanusWebSocket.h */,
+				6AA427A8205A19D600CB3E63 /* GJJanusWebSocket.m */,
+				6AA427B4205A19DF00CB3E63 /* Tools.h */,
+				6AA427B7205A19E000CB3E63 /* Tools.m */,
+				6AA427B6205A19E000CB3E63 /* Transports.h */,
+				6AA427B5205A19DF00CB3E63 /* Transports.m */,
+			);
+			path = Janus;
+			sourceTree = "<group>";
+		};
+		6AB0AD6F20882A97000981DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB0AD7520882A98000981DD /* GJImage.app */,
+				6AB0AD7720882A98000981DD /* libGJImageFilters.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB0AD8520882E5E000981DD /* GJCategory */ = {
+			isa = PBXGroup;
+			children = (
+				6AB0AD882088374E000981DD /* GJLog.c */,
+				6AB0AD8720882F99000981DD /* GJPlatformHeader.h */,
+				6AB0AD8620882E7C000981DD /* GJLiveDefine.h */,
+			);
+			path = GJCategory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A894DE7205F8F1900C556C8 /* Janus++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A894DEE205F8F1900C556C8 /* Build configuration list for PBXNativeTarget "Janus++" */;
+			buildPhases = (
+				6A894DE4205F8F1900C556C8 /* Sources */,
+				6A894DE5205F8F1900C556C8 /* Frameworks */,
+				6A894DE6205F8F1900C556C8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Janus++";
+			productName = "Janus++";
+			productReference = 6A894DE8205F8F1900C556C8 /* libJanus++.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6AA426FD205A191B00CB3E63 /* GJJanusDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA42714205A191B00CB3E63 /* Build configuration list for PBXNativeTarget "GJJanusDemo" */;
+			buildPhases = (
+				5DD80F3FECAC34AD33A445B1 /* [CP] Check Pods Manifest.lock */,
+				6AA426FA205A191B00CB3E63 /* Sources */,
+				6AA426FB205A191B00CB3E63 /* Frameworks */,
+				6AA426FC205A191B00CB3E63 /* Resources */,
+				607BA2AA05B02859ABE39A8D /* [CP] Embed Pods Frameworks */,
+				C1244DF1F6925280EA412AC4 /* [CP] Copy Pods Resources */,
+				6A25DFE42094570A00B15ADB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6B36922069F2CA001FEDE1 /* PBXTargetDependency */,
+			);
+			name = GJJanusDemo;
+			productName = JanusDemo;
+			productReference = 6AA426FE205A191B00CB3E63 /* GJJanusDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AA4279E205A19BF00CB3E63 /* Janus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AA427A5205A19BF00CB3E63 /* Build configuration list for PBXNativeTarget "Janus" */;
+			buildPhases = (
+				C024C3482F1657301551CC51 /* [CP] Check Pods Manifest.lock */,
+				6AA4279B205A19BF00CB3E63 /* Sources */,
+				6AA4279C205A19BF00CB3E63 /* Frameworks */,
+				6AA4279D205A19BF00CB3E63 /* CopyFiles */,
+				62DF63D471DD3BD57DE3A12D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Janus;
+			productName = Janus;
+			productReference = 6AA4279F205A19BF00CB3E63 /* libJanus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AA426F6205A191B00CB3E63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MirrorUncle;
+				TargetAttributes = {
+					6A894DE7205F8F1900C556C8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6AA426FD205A191B00CB3E63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6AA4279E205A19BF00CB3E63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6AA426F9205A191B00CB3E63 /* Build configuration list for PBXProject "GJJanusDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AA426F5205A191B00CB3E63;
+			productRefGroup = 6AA426FF205A191B00CB3E63 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AB0AD6F20882A97000981DD /* Products */;
+					ProjectRef = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6AA426FD205A191B00CB3E63 /* GJJanusDemo */,
+				6AA4279E205A19BF00CB3E63 /* Janus */,
+				6A894DE7205F8F1900C556C8 /* Janus++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6AB0AD7520882A98000981DD /* GJImage.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GJImage.app;
+			remoteRef = 6AB0AD7420882A98000981DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AB0AD7720882A98000981DD /* libGJImageFilters.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGJImageFilters.a;
+			remoteRef = 6AB0AD7620882A98000981DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AA426FC205A191B00CB3E63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA4270E205A191B00CB3E63 /* LaunchScreen.storyboard in Resources */,
+				6AA4270B205A191B00CB3E63 /* Assets.xcassets in Resources */,
+				6AA42709205A191B00CB3E63 /* Main.storyboard in Resources */,
+				6A01287220A13A6F000D9856 /* track_data.dat in Resources */,
+				6A01287A20A13B04000D9856 /* bear.zip in Resources */,
+				6A01287D20A13B04000D9856 /* lb.zip in Resources */,
+				6A01287C20A13B04000D9856 /* bd.zip in Resources */,
+				6A01287B20A13B04000D9856 /* hkbs.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DD80F3FECAC34AD33A445B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JanusDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		607BA2AA05B02859ABE39A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DF63D471DD3BD57DE3A12D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Janus/Pods-Janus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C024C3482F1657301551CC51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Janus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1244DF1F6925280EA412AC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A894DE4205F8F1900C556C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A894DF3205F903900C556C8 /* JanusPlugin_c.cpp in Sources */,
+				6A894DEC205F8F1900C556C8 /* Janus_c.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA426FA205A191B00CB3E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AA42706205A191B00CB3E63 /* ViewController.m in Sources */,
+				6A01288F20A14882000D9856 /* ZipArchive.m in Sources */,
+				6A01288E20A14882000D9856 /* zip.c in Sources */,
+				6A01288D20A14882000D9856 /* unzip.c in Sources */,
+				6AA42711205A191B00CB3E63 /* main.m in Sources */,
+				6A01288C20A14882000D9856 /* mztools.c in Sources */,
+				6A1A3B0C20610BA700CCAE98 /* VideoCallViewController.m in Sources */,
+				6AA42703205A191B00CB3E63 /* AppDelegate.m in Sources */,
+				6A01288B20A14882000D9856 /* ioapi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AA4279B205A19BF00CB3E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A67912720736D4A00117D08 /* GJJanusRole.m in Sources */,
+				6AB0ACD120848A00000981DD /* KKRTCDefine.m in Sources */,
+				6AA427B3205A19D700CB3E63 /* GJJanusVideoRoom.m in Sources */,
+				6A6791302073709300117D08 /* RTCFactory.m in Sources */,
+				6AA427B2205A19D700CB3E63 /* GJJanusPlugin.m in Sources */,
+				6AA427B8205A19E000CB3E63 /* Transports.m in Sources */,
+				6A3986F2208DB4FF00C085E6 /* GJJanusResultModel.m in Sources */,
+				6AB0AD5A2086DA3D000981DD /* GroupTimer.m in Sources */,
+				6A67912D20736DEB00117D08 /* GJJanusPublishRole.m in Sources */,
+				6AA427B9205A19E000CB3E63 /* Tools.m in Sources */,
+				6A67912A20736DBF00117D08 /* GJJanusListenRole.m in Sources */,
+				6AB0AD7A20882BD5000981DD /* KKRTCVideoCapturer.m in Sources */,
+				6A67913620737C2100117D08 /* GJJanusMediaConstraints.m in Sources */,
+				6AA427B0205A19D700CB3E63 /* GJJanusWebSocket.m in Sources */,
+				6AA427B1205A19D700CB3E63 /* GJJanus.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A6B36922069F2CA001FEDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AA4279E205A19BF00CB3E63 /* Janus */;
+			targetProxy = 6A6B36912069F2CA001FEDE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AA42707205A191B00CB3E63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AA42708205A191B00CB3E63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AA4270C205A191B00CB3E63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AA4270D205A191B00CB3E63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A894DEF205F8F1900C556C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libwebsockets/build/include\" \"$(SRCROOT)/libwebsockets/build/openssl/include\" \"$(SRCROOT)/../webr/src/webrtc/base\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		6A894DF0205F8F1900C556C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libwebsockets/build/include\" \"$(SRCROOT)/libwebsockets/build/openssl/include\" \"$(SRCROOT)/../webr/src/webrtc/base\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		6AA42712205A191B00CB3E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6AA42713205A191B00CB3E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AA42715205A191B00CB3E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JanusDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.engine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\"";
+			};
+			name = Debug;
+		};
+		6AA42716205A191B00CB3E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JanusDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.engine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\"";
+			};
+			name = Release;
+		};
+		6AA427A6205A19BF00CB3E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49184AE9514E6304B6F0B88A /* Pods-Janus.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JanusDemo",
+					"$(PROJECT_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Janus/include\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
+			};
+			name = Debug;
+		};
+		6AA427A7205A19BF00CB3E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E2A07ACD4E1511E3C3D0D88 /* Pods-Janus.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7MDP8Y272;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JanusDemo",
+					"$(PROJECT_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Janus/include\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A894DEE205F8F1900C556C8 /* Build configuration list for PBXNativeTarget "Janus++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A894DEF205F8F1900C556C8 /* Debug */,
+				6A894DF0205F8F1900C556C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA426F9205A191B00CB3E63 /* Build configuration list for PBXProject "GJJanusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA42712205A191B00CB3E63 /* Debug */,
+				6AA42713205A191B00CB3E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA42714205A191B00CB3E63 /* Build configuration list for PBXNativeTarget "GJJanusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA42715205A191B00CB3E63 /* Debug */,
+				6AA42716205A191B00CB3E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AA427A5205A19BF00CB3E63 /* Build configuration list for PBXNativeTarget "Janus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AA427A6205A19BF00CB3E63 /* Debug */,
+				6AA427A7205A19BF00CB3E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AA426F6205A191B00CB3E63 /* Project object */;
+}
