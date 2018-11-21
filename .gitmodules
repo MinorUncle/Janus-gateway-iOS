@@ -1,0 +1,3 @@
+[submodule "GJImage"]
+	path = GJImage
+	url = git@github.com:MinorUncle/GJImage.git

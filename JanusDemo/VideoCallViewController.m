@@ -215,7 +215,7 @@
 }
 -(void)dealloc{
     [_videoRoom chanceVideoEffect];
-    [_videoRoom chanceSticker];
+//    [_videoRoom chanceSticker];
 }
 -(void)buildUI{
     _localView = [[UIView alloc]initWithFrame:self.view.bounds];
@@ -423,31 +423,31 @@
                 break;
         }
     }else if (btn == _startStickerBtn){
-        if (btn.selected) {
-            CGRect rect = CGRectMake(0, 0, 200, 50);
-            NSMutableArray<GJOverlayAttribute*>* overlays = [NSMutableArray arrayWithCapacity:6];
-            CGRect frame = {250,360,rect.size.width,rect.size.height};
-            for (int i = 0; i< 1; i++) {
-                overlays[0] = [GJOverlayAttribute overlayAttributeWithImage:[self getSnapshotImageWithSize:rect.size] frame:frame rotate:0];
-            }
-            __weak VideoCallViewController* wkSelf = self;
-            
-            [_videoRoom startStickerWithImages:overlays fps:15 updateBlock:^(NSInteger index, GJOverlayAttribute * _Nonnull ioAttr, BOOL * _Nonnull ioFinish) {
-                *ioFinish = NO;
-                if (*ioFinish) {
-                    btn.selected = NO;
-                }
-                static CGFloat r;
-                r += 1;
-                UIImage* image = [wkSelf getSnapshotImageWithSize:rect.size];
-                if (image) {
-                    ioAttr.image = image;
-                }
-                ioAttr.rotate = r;
-            }];
-        }else{
-            [_videoRoom chanceSticker];
-        }
+//        if (btn.selected) {
+//            CGRect rect = CGRectMake(0, 0, 200, 50);
+//            NSMutableArray<GJOverlayAttribute*>* overlays = [NSMutableArray arrayWithCapacity:6];
+//            CGRect frame = {250,360,rect.size.width,rect.size.height};
+//            for (int i = 0; i< 1; i++) {
+//                overlays[0] = [GJOverlayAttribute overlayAttributeWithImage:[self getSnapshotImageWithSize:rect.size] frame:frame rotate:0];
+//            }
+//            __weak VideoCallViewController* wkSelf = self;
+//            
+//            [_videoRoom startStickerWithImages:overlays fps:15 updateBlock:^(NSInteger index, GJOverlayAttribute * _Nonnull ioAttr, BOOL * _Nonnull ioFinish) {
+//                *ioFinish = NO;
+//                if (*ioFinish) {
+//                    btn.selected = NO;
+//                }
+//                static CGFloat r;
+//                r += 1;
+//                UIImage* image = [wkSelf getSnapshotImageWithSize:rect.size];
+//                if (image) {
+//                    ioAttr.image = image;
+//                }
+//                ioAttr.rotate = r;
+//            }];
+//        }else{
+//            [_videoRoom chanceSticker];
+//        }
 
     }else if (btn == _faceStickerBtn){
         NSString* zpath = [[NSBundle mainBundle]pathForResource:_stickerPath[btn.tag%_stickerPath.count] ofType:@"zip"];

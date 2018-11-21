@@ -9,7 +9,6 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 #import "GJJanusMediaConstraints.h"
-#import "GJOverlayAttribute.h"
 #import "KKRTCDefine.h"
 
 @class UIView;
@@ -123,12 +122,12 @@ typedef void(^CompleteCallback)(BOOL isSuccess, NSError* error);
  @param updateBlock 每次更新的回调，index表示当前更新的图片，ioFinish表示是否结束，输入输出值。
  @return 是否成功
  */
-- (BOOL)startStickerWithImages:(NSArray<GJOverlayAttribute*>* _Nonnull)images fps:(NSInteger)fps updateBlock:(OverlaysUpdate _Nullable )updateBlock;
+//- (BOOL)startStickerWithImages:(NSArray<GJOverlayAttribute*>* _Nonnull)images fps:(NSInteger)fps updateBlock:(OverlaysUpdate _Nullable )updateBlock;
 
 /**
  主动停止贴图。也可以通过addStickerWithImages的updateBlock，赋值ioFinish true来停止，不过该方法只能在更新的时候使用，可能会有延迟，fps越小延迟越大。
  */
-- (void)chanceSticker;
+//- (void)chanceSticker;
 
 
 #pragma mark 虹软视图效果

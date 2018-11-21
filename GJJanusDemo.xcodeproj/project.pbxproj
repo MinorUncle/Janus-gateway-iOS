@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6874BF4FC8D135DBD3917205 /* libPods-JanusDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */; };
+		27A584FA21A591DB00CD1C11 /* libGJImageFilters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A584F921A590A000CD1C11 /* libGJImageFilters.a */; };
 		6A01287220A13A6F000D9856 /* track_data.dat in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287120A13A6F000D9856 /* track_data.dat */; };
 		6A01287A20A13B04000D9856 /* bear.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287620A13B01000D9856 /* bear.zip */; };
 		6A01287B20A13B04000D9856 /* hkbs.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6A01287720A13B02000D9856 /* hkbs.zip */; };
@@ -48,31 +48,31 @@
 		6AB0ACD120848A00000981DD /* KKRTCDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0ACD020848A00000981DD /* KKRTCDefine.m */; };
 		6AB0AD5A2086DA3D000981DD /* GroupTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0AD592086DA3D000981DD /* GroupTimer.m */; };
 		6AB0AD7A20882BD5000981DD /* KKRTCVideoCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0AD7920882BD5000981DD /* KKRTCVideoCapturer.m */; };
-		6AB0AD8420882CDC000981DD /* libGJImageFilters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB0AD7720882A98000981DD /* libGJImageFilters.a */; };
 		791C368DA05994D9AC9B6C5C /* libPods-Janus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */; };
+		DF010C425CFC34A662223E4D /* libPods-GJJanusDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6E875D01BA5DB31CB32CDF /* libPods-GJJanusDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27A584F621A590A000CD1C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A584F021A590A000CD1C11 /* GJImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0417FC5E1E5EB0E100D5B5D9;
+			remoteInfo = GJImage;
+		};
+		27A584F821A590A000CD1C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A584F021A590A000CD1C11 /* GJImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0417FCBD1E5EC74E00D5B5D9;
+			remoteInfo = GJImageFilters;
+		};
 		6A6B36912069F2CA001FEDE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6AA426F6205A191B00CB3E63 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6AA4279E205A19BF00CB3E63;
 			remoteInfo = Janus;
-		};
-		6AB0AD7420882A98000981DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0417FC5E1E5EB0E100D5B5D9;
-			remoteInfo = GJImage;
-		};
-		6AB0AD7620882A98000981DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0417FCBD1E5EC74E00D5B5D9;
-			remoteInfo = GJImageFilters;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -110,9 +110,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27A584F021A590A000CD1C11 /* GJImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GJImage.xcodeproj; path = GJImage/GJImage.xcodeproj; sourceTree = "<group>"; };
 		4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		49184AE9514E6304B6F0B88A /* Pods-Janus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Janus/Pods-Janus.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6E875D01BA5DB31CB32CDF /* libPods-GJJanusDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GJJanusDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Janus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54411A4BEE9964BD1B6E1CDE /* Pods-GJJanusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJanusDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GJJanusDemo/Pods-GJJanusDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6A01287120A13A6F000D9856 /* track_data.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = track_data.dat; sourceTree = "<group>"; };
 		6A01287620A13B01000D9856 /* bear.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = bear.zip; sourceTree = "<group>"; };
 		6A01287720A13B02000D9856 /* hkbs.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = hkbs.zip; sourceTree = "<group>"; };
@@ -188,7 +191,6 @@
 		6AB0ACD32084987C000981DD /* KKRTCDefine+private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KKRTCDefine+private.m"; sourceTree = "<group>"; };
 		6AB0AD582086DA3D000981DD /* GroupTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupTimer.h; sourceTree = "<group>"; };
 		6AB0AD592086DA3D000981DD /* GroupTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupTimer.m; sourceTree = "<group>"; };
-		6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GJImage.xcodeproj; path = ../GJImage/GJImage.xcodeproj; sourceTree = "<group>"; };
 		6AB0AD7820882BD5000981DD /* KKRTCVideoCapturer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRTCVideoCapturer.h; sourceTree = "<group>"; };
 		6AB0AD7920882BD5000981DD /* KKRTCVideoCapturer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRTCVideoCapturer.m; sourceTree = "<group>"; };
 		6AB0AD8620882E7C000981DD /* GJLiveDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJLiveDefine.h; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JanusDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2A07ACD4E1511E3C3D0D88 /* Pods-Janus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Janus/Pods-Janus.release.xcconfig"; sourceTree = "<group>"; };
 		EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JanusDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F597E2BDC3054159ED486457 /* Pods-GJJanusDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJJanusDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GJJanusDemo/Pods-GJJanusDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +218,7 @@
 				6A1A3B072060DB9E00CCAE98 /* VideoToolbox.framework in Frameworks */,
 				6AA42831205A776000CB3E63 /* libJanus.a in Frameworks */,
 				6A6DB4CE20D0B9ED00BC6A18 /* WebRTC.framework in Frameworks */,
-				6874BF4FC8D135DBD3917205 /* libPods-JanusDemo.a in Frameworks */,
+				DF010C425CFC34A662223E4D /* libPods-GJJanusDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AB0AD8420882CDC000981DD /* libGJImageFilters.a in Frameworks */,
+				27A584FA21A591DB00CD1C11 /* libGJImageFilters.a in Frameworks */,
 				791C368DA05994D9AC9B6C5C /* libPods-Janus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,8 +241,19 @@
 				7E2A07ACD4E1511E3C3D0D88 /* Pods-Janus.release.xcconfig */,
 				4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */,
 				EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */,
+				F597E2BDC3054159ED486457 /* Pods-GJJanusDemo.debug.xcconfig */,
+				54411A4BEE9964BD1B6E1CDE /* Pods-GJJanusDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		27A584F121A590A000CD1C11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27A584F721A590A000CD1C11 /* GJImage.app */,
+				27A584F921A590A000CD1C11 /* libGJImageFilters.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		49C6F4CF60DA59BBBE1EE815 /* Frameworks */ = {
@@ -253,6 +267,7 @@
 				6AA42835205A77BA00CB3E63 /* libAFNetworking.a */,
 				4FEE1BA4094029DC948B72F7 /* libPods-Janus.a */,
 				6DC7711CEBB4DE3608521B1A /* libPods-JanusDemo.a */,
+				4A6E875D01BA5DB31CB32CDF /* libPods-GJJanusDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,8 +312,8 @@
 		6AA426F5205A191B00CB3E63 = {
 			isa = PBXGroup;
 			children = (
+				27A584F021A590A000CD1C11 /* GJImage.xcodeproj */,
 				6A6DB4CD20D0B9ED00BC6A18 /* WebRTC.framework */,
-				6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */,
 				6AA42700205A191B00CB3E63 /* JanusDemo */,
 				6AA427A0205A19BF00CB3E63 /* Janus */,
 				6A894DE9205F8F1900C556C8 /* Janus++ */,
@@ -386,15 +401,6 @@
 			path = Janus;
 			sourceTree = "<group>";
 		};
-		6AB0AD6F20882A97000981DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6AB0AD7520882A98000981DD /* GJImage.app */,
-				6AB0AD7720882A98000981DD /* libGJImageFilters.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		6AB0AD8520882E5E000981DD /* GJCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,8 +439,6 @@
 				6AA426FA205A191B00CB3E63 /* Sources */,
 				6AA426FB205A191B00CB3E63 /* Frameworks */,
 				6AA426FC205A191B00CB3E63 /* Resources */,
-				607BA2AA05B02859ABE39A8D /* [CP] Embed Pods Frameworks */,
-				C1244DF1F6925280EA412AC4 /* [CP] Copy Pods Resources */,
 				6A25DFE42094570A00B15ADB /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -455,7 +459,6 @@
 				6AA4279B205A19BF00CB3E63 /* Sources */,
 				6AA4279C205A19BF00CB3E63 /* Frameworks */,
 				6AA4279D205A19BF00CB3E63 /* CopyFiles */,
-				62DF63D471DD3BD57DE3A12D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,7 +484,7 @@
 					};
 					6AA426FD205A191B00CB3E63 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					6AA4279E205A19BF00CB3E63 = {
 						CreatedOnToolsVersion = 9.2;
@@ -502,8 +505,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6AB0AD6F20882A97000981DD /* Products */;
-					ProjectRef = 6AB0AD6E20882A97000981DD /* GJImage.xcodeproj */;
+					ProductGroup = 27A584F121A590A000CD1C11 /* Products */;
+					ProjectRef = 27A584F021A590A000CD1C11 /* GJImage.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -516,18 +519,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6AB0AD7520882A98000981DD /* GJImage.app */ = {
+		27A584F721A590A000CD1C11 /* GJImage.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = GJImage.app;
-			remoteRef = 6AB0AD7420882A98000981DD /* PBXContainerItemProxy */;
+			remoteRef = 27A584F621A590A000CD1C11 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6AB0AD7720882A98000981DD /* libGJImageFilters.a */ = {
+		27A584F921A590A000CD1C11 /* libGJImageFilters.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGJImageFilters.a;
-			remoteRef = 6AB0AD7620882A98000981DD /* PBXContainerItemProxy */;
+			remoteRef = 27A584F821A590A000CD1C11 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -562,41 +565,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JanusDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GJJanusDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		607BA2AA05B02859ABE39A8D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62DF63D471DD3BD57DE3A12D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Janus/Pods-Janus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C024C3482F1657301551CC51 /* [CP] Check Pods Manifest.lock */ = {
@@ -615,21 +588,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1244DF1F6925280EA412AC4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JanusDemo/Pods-JanusDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -850,11 +808,11 @@
 		};
 		6AA42715205A191B00CB3E63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4651861CDC75438DEFA3C638 /* Pods-JanusDemo.debug.xcconfig */;
+			baseConfigurationReference = F597E2BDC3054159ED486457 /* Pods-GJJanusDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K7MDP8Y272;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2X3RULC2TF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -865,6 +823,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gj.engine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DianXiong_Wildcard;
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\"";
@@ -873,11 +832,11 @@
 		};
 		6AA42716205A191B00CB3E63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB13F93C47F8C6E645CE49F /* Pods-JanusDemo.release.xcconfig */;
+			baseConfigurationReference = 54411A4BEE9964BD1B6E1CDE /* Pods-GJJanusDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K7MDP8Y272;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -889,6 +848,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gj.engine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\"";
@@ -916,7 +876,7 @@
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Janus/include\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GJImage/GJImageFilters\" \"$(SRCROOT)/GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
 			};
 			name = Debug;
 		};
@@ -941,7 +901,7 @@
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Janus/include\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../GJImage/GJImageFilters\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/../GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/../GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/GJImage/GJImageFilters\" \"$(SRCROOT)/GJImage/GPUImage-master/framework/Source\" \"$(SRCROOT)/GJImage/GPUImage-master/framework/Source/iOS\" \"$(SRCROOT)/GJImage/GJImageFilters/ARCSoft\" \"$(SRCROOT)/GJImage/GJImageFilters/ARCSoft/include/arcsoft\"";
 			};
 			name = Release;
 		};
